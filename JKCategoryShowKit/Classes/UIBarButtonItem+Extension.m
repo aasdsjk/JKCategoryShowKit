@@ -7,7 +7,7 @@
 //
 
 #import "UIBarButtonItem+Extension.h"
-
+#import "UIView+Extension.h"
 @implementation UIBarButtonItem (Extension)
 
 + (UIBarButtonItem *)itemWithImageName:(NSString *)imageName highImageName:(NSString *)highImageName target:(id)target action:(SEL)action
@@ -16,6 +16,7 @@
     [button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     [button setBackgroundImage:[UIImage imageNamed:highImageName] forState:UIControlStateHighlighted];
     button.adjustsImageWhenHighlighted = NO;
+    
     button.TT_size= button.currentBackgroundImage.size;
     if (button.currentBackgroundImage.size.width < 24) {
         button.TT_size= CGSizeMake(24, 24);

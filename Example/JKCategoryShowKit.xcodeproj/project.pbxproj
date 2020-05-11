@@ -60,11 +60,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9B4B1C8378FF5E10DDDD8D52 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9B4B1C8378FF5E10DDDD8D52 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D1E10670426975D6A31AC4EC /* Pods-JKCategoryShowKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKCategoryShowKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-JKCategoryShowKit_Tests/Pods-JKCategoryShowKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D3FF680CC550706B7EE4A909 /* JKCategoryShowKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JKCategoryShowKit.podspec; path = ../JKCategoryShowKit.podspec; sourceTree = "<group>"; };
+		D3FF680CC550706B7EE4A909 /* JKCategoryShowKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKCategoryShowKit.podspec; path = ../JKCategoryShowKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D559813E85BF17BA4142CC00 /* Pods_JKCategoryShowKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKCategoryShowKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6D38C26F442B6BAFC94E1FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D6D38C26F442B6BAFC94E1FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EFB62C0DF6F4B1AFA1FD8964 /* Pods-JKCategoryShowKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKCategoryShowKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-JKCategoryShowKit_Example/Pods-JKCategoryShowKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F92BBAF7C27CF1C0928CA0FC /* Pods-JKCategoryShowKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKCategoryShowKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JKCategoryShowKit_Tests/Pods-JKCategoryShowKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				F92BBAF7C27CF1C0928CA0FC /* Pods-JKCategoryShowKit_Tests.debug.xcconfig */,
 				D1E10670426975D6A31AC4EC /* Pods-JKCategoryShowKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -344,10 +344,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JKCategoryShowKit_Example/Pods-JKCategoryShowKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JKCategoryShowKit/JKCategoryShowKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKCategoryShowKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

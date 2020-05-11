@@ -8,7 +8,7 @@ platform :ios, '8.0'
 
 target 'JKCategoryShowKit_Example' do
   pod 'JKCategoryShowKit', :path => '../'
-
+  pod 'SDWebImage'
   target 'JKCategoryShowKit_Tests' do
     inherit! :search_paths
 

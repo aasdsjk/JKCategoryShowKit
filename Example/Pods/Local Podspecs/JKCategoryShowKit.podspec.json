@@ -1,7 +1,7 @@
 {
   "name": "JKCategoryShowKit",
   "version": "0.1.0",
-  "summary": "A short description of JKCategoryShowKit.",
+  "summary": "基础库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/aasdsjk/JKCategoryShowKit",
   "license": {
@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "JKCategoryShowKit/Classes/**/*"
+  "source_files": "JKCategoryShowKit/Classes/**/*",
+  "dependencies": {
+    "SDWebImage": [
+
+    ]
+  }
 }

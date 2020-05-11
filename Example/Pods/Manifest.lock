@@ -4,15 +4,21 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - JKCategoryShowKit (0.1.0)
+  - JKCategoryShowKit (0.1.0):
+    - SDWebImage
+  - SDWebImage (5.4.0):
+    - SDWebImage/Core (= 5.4.0)
+  - SDWebImage/Core (5.4.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
   - JKCategoryShowKit (from `../`)
+  - SDWebImage
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - FBSnapshotTestCase
+    - SDWebImage
 
 EXTERNAL SOURCES:
   JKCategoryShowKit:
@@ -20,8 +26,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  JKCategoryShowKit: 102b579256a1bd0abb0cee5a26b00c38908d8a31
+  JKCategoryShowKit: 7d44d66e1715ee345a42a43eeb4ae729f182eba0
+  SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
 
-PODFILE CHECKSUM: 750be7f202e735a301927735249d0838d58d0b39
+PODFILE CHECKSUM: 753e29089553e3c290aecb740dbd6723bc87dec2
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.7.5
