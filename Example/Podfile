@@ -1,6 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 platform :ios, '8.0'
+
+
+#pod 'JKCategoryShowKit', :path => 'Desktop/JKCategoryShowKit/JKCategoryShowKit'
 
 target 'JKCategoryShowKit_Example' do
   pod 'JKCategoryShowKit', :path => '../'

@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - JKCategoryShowKit (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - JKCategoryShowKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  JKCategoryShowKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  JKCategoryShowKit: 102b579256a1bd0abb0cee5a26b00c38908d8a31
+
+PODFILE CHECKSUM: 750be7f202e735a301927735249d0838d58d0b39
+
+COCOAPODS: 1.9.1

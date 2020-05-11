@@ -1,0 +1,6 @@
+framework module Pods_JKCategoryShowKit_Tests {
+  umbrella header "Pods-JKCategoryShowKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
