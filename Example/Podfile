@@ -8,10 +8,12 @@ platform :ios, '8.0'
 
 target 'JKCategoryShowKit_Example' do
   pod 'JKCategoryShowKit', :path => '../'
-  pod 'SDWebImage'
+  pod 'SDWebImage','~>5.0'
+#  pod 'MJRefresh'
+#  pod 'MJExtension'
   target 'JKCategoryShowKit_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
+#    pod 'FBSnapshotTestCase'
   end
 end
